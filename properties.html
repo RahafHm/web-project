@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css" /> 
+    <script src="jquery.js"></script><!-- jquery 1.11.2 -->
+    <!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	
+	<script src="my_function/jquery.easing.min.js"></script>
+	<script src="my_function/modernizr.custom.js"></script>-->
+	<script src="my_function.js"></script>
+
+    <title>Alpha company</title>
+</head>
+<body>
+    <header>
+        <a href="" >follow the link for the poject</a>
+        <nav class="navigation">
+            <a href="home.html" class="menu">Home</a>
+            <a href="properties.html">properties</a>
+            <a href="aboutUs.html">About us</a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <table>
+                <tr>
+                    <th>اختيار</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>الإيجار الشهري</th>
+                    <th>تفاصيل</th>
+                    <th>المدينة</th>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="selection"></td>
+                    
+                    <td><input type="button" id="btn1" value="show" onclick="show_hide()" ></td>
+                    <td>500000 ل.س</td>
+                    <td>
+                        <strong>شقة غرفة وصالة مساحة 70 م</strong>
+                        
+                    </td>
+                    <td>دمشق</td>
+                </tr>
+                    <tr>
+                    <td colspan="5" width="100%" height="30" id="hide" >
+                    المنطقة:ركن الدين..............متوفر كراج..........الطابق الثالث
+                        الملكية:طابو............بلكون مساحة 12 متر..........مفروشة
+                        <div class="image-container">
+                
+                        <img src="photo_٢٠٢٢-٠٨-٠٥_١٣-٤٩-٤٣.jpg" id="img"/>
+                        <img src="photo_٢٠٢٢-٠٨-٠٥_١٣-٤٩-٤٣.jpg" id="img"/>
+                        <img src="photo_٢٠٢٢-٠٨-٠٥_١٣-٤٩-٤٣.jpg" id="img"/>
+                        </div>
+                    </td>
+                    </tr>
+                    </tr>
+                    
+                <tr>
+                    <td><input type="radio" name="selection"></td>
+                    <td><input type="button" id="btn1" value="show" ></td>    
+                    <td>250000 ل.س</td>
+                    <td>
+                        <strong>دكان مساحة 50م</strong>
+                    </td>
+
+                    <td>حمص</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="selection"></td>
+                    <td><input type="button" id="btn1" value="show" ></td>
+                    <td>600000 ل.س</td>
+                    <td>
+                        <strong>شقة فاخرة غرفتين وصالة مساحة 110م</strong>
+                    </td>
+                    <td>دمشق</td>
+                </tr>
+    
+        </table>
+        
+        <button class="btn-continue" onclick="showForm()">متابعة</button>
+    </div>
+    <div id="form-section" style="display:none;">
+        <h2>Form</h2>
+        <form>
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" ><br><br>
+
+            <label for="id">الرقم الوطني:</label>
+            <input type="text" name="nationalId" required pattern="\d{11}"><br>
+
+            <label for="dob">تاريخ الولادة:</label>
+            <input type="date" id="dob" name="dob" ><br><br>
+
+            <label for="phone">رقم الموبايل:</label>
+            <input type="text" id="phone" name="phone" ><br><br>
+
+            <label for="email">الإيميل:</label>
+            <input type="email" id="email" name="email" ><br><br>
+
+            <button class="btn-continue" onclick="show_hide()">إرسال</button>
+        </form>
+    </div>
+
+
+</body>
